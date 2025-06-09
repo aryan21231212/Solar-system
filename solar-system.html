@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Solar System with Three.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body style="margin:0;overflow:hidden;background-color:#000;touch-action:none;">
+    <div id="container" style="position:absolute;width:100%;height:100%;">
+        <div id="controls" style="position:absolute;top:10px;left:10px;background-color:rgba(0,0,0,0.7);padding:15px;border-radius:5px;color:white;font-family:Arial;max-width:300px;max-height:90vh;overflow-y:auto;z-index:100;">
+            <div style="display:flex;justify-content:space-between;align-items:center;">
+                <h2 style="margin-top:0;font-size:1.2em;">Solar System</h2>
+                <button onclick="toggleTheme()" id="theme-toggle" style="padding:5px 10px;background:#333;color:white;border:none;border-radius:3px;font-size:0.9em;">Light Mode</button>
+            </div>
+            <div id="planet-controls" style="font-size:0.9em;"></div>
+            <div style="margin-top:15px;">
+                <button onclick="resetSpeeds()" style="padding:5px 10px;background:#333;color:white;border:none;border-radius:3px;margin-right:5px;font-size:0.9em;">Reset Speeds</button>
+                <button onclick="toggleAnimation()" style="padding:5px 10px;background:#333;color:white;border:none;border-radius:3px;font-size:0.9em;">Pause/Play</button>
+            </div>
+            <div id="planet-info" style="margin-top:15px;padding:10px;background:rgba(255,255,255,0.1);border-radius:5px;display:none;font-size:0.9em;"></div>
+        </div>
+    </div>
+
+    <!-- Tooltip element -->
+    <div id="tooltip" style="position:absolute;color:white;background-color:rgba(0,0,0,0.7);padding:5px 10px;border-radius:3px;pointer-events:none;display:none;z-index:100;font-size:0.9em;"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
