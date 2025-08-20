@@ -1,5 +1,5 @@
-🌌 3D Solar System with Three.js
-🚀 Features
+3D Solar System with Three.js
+Features
 
 Realistic 3D model of our solar system
 Interactive controls for planetary speeds
