@@ -1,4 +1,4 @@
-3D Solar System with Three.js
+3D Solar System with Three.js (Not deployed yet)
 Features
 
 Realistic 3D model of our solar system
